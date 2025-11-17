@@ -1,1 +1,0 @@
-# DigimonAPI-Firebase

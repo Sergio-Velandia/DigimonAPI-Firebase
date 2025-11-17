@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon App & Proyectos</title>
+    <!-- Carga de Tailwind CSS para la estética -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define la fuente Inter y el tamaño base (se complementa con style.css) */
+        body { font-family: "Inter", sans-serif; background-color: #f3f4f6; }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación (Header) -->
+    <header class="bg-white shadow-xl p-4 fixed top-0 w-full z-10 border-b border-gray-200">
+        <!-- Contenedor dinámico del menú, manejado por main.js (Auth State) -->
+        <div id="menu" class="max-w-6xl mx-auto">
+            <!-- Aquí se inyectarán los botones Home, Original, Logout, o Login/Registro -->
+        </div>
+    </header>
+
+    <!-- Contenedor principal donde se inyectará el contenido de las vistas (Home o Formulario) -->
+    <div id="app" class="pt-4"> 
+        <!-- El padding superior (pt-20) se maneja ahora en style.css, dejando un pt-4 base aquí. -->
+        <p class="text-center text-gray-500">Cargando aplicación...</p>
+    </div> 
+
+    <!-- Script de entrada de Vite -->
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
